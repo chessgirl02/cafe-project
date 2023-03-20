@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-Us">
+	<head>
+		<title>Cafe website</title>
+		<link href="/favicon.ico" rel="icon" type="image/x-icon" />
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Zen+Dots&display=swap" rel="stylesheet">
+		<!-- <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet"> -->
+		<link rel="stylesheet" href="styles/reset.css" />
+		<link rel="stylesheet" href="styles/main.css" />
+		<link rel="stylesheet" href="styles/navigation.css" />
+		<link rel="stylesheet" href="styles/pastries.css" />
+		<link rel="stylesheet" href="styles/coffee.css" />
+		<link rel="stylesheet" href="styles/beans.css" />
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+	</head>
+	<body>
+		<section>
+			<header data-expanded="not_expanded">
+				<h1>
+					Lil' Italian Cafe
+					<!-- <img src="images/logo.png" /> -->
+				</h1>
+				<span data-action="toggle_navigation"></span>
+				<ul>
+					<li data-action="go_to" data-role="about_us">about us</li>
+					<li data-action="go_to" data-role="browse_pastries">browse pastries</li>
+					<li data-action="go_to" data-role="buy_coffee">buy coffee</li>
+					<li data-action="go_to" data-role="contact_us">contact us</li>
+				</ul>
+				<aside data-action="attempt_login">login</aside>
+			</header>
+			<div class="main_image"></div>
+			<span data-role2="special_highlight" data-action="go_to" data-role="browse_pastries">
+
+				All our Pizzas are made fresh every day!
+				<div></div>
+			</span>
+			<main>
+
+				<section data-role="about_us_content">
+					<a name="about_us">back_to_top</a>
+					<h2>About Us</h2>
+					<p>
+						<br>
+						Welcome!
+						<br><br>
+						Browse our offerings here and please come visit us in person soon!
+						<br><br>
+						Sample the best pizza Herndon has to offer at a local independent pizza restaurant.
+						<br><br>
+						Lil' Italian Cafe is one of Herndon's most popular. Give them a try, and you'll soon understand why.
+						<br><br>
+						It's not just pizza. You can also find pasta, sandwiches, and other side dishes at independent pizzerias in Herndon Try something new and expand your culinary horizons. For a unique taste of the region, chow down on Veggie Pizza at this well-regarded restaurant. You'll soon see why it's so popular locally.
+						<br><br>
+						This restaurant is a mainstay of the community. Try them for yourself and see why they're such a local favorite. Pick up your pizza at Lil' Italian Cafe with curbside pickup. It makes picking up a meal easier than ever.
+						<br><br>
+						You can pay by credit card at Lil' Italian Cafe. That makes it easy to get your pizza as quickly as possible.
+						<br><br>
+					</p>
+				</section>
+
+				<section data-role="browse_pastries_content">
+					<a name="browse_pastries">back to top</a>
+					<h2>browse Menu</h2>
+					<aside>
+						We make a rich variety of pizzas and other culinary options. Try them all!
+					</aside>
+					<span data-selected="not_selected" data-action="show_all">view all</span>
+					<span data-selected="selected" data-action="show_on_offer">on offer</span>
+					<output data-role="toast"></output>
+				</section>
+
+				<section data-role="browse_coffee_content">
+					<a name="buy_coffee">back to top</a>
+					<h2>buy our Appetizers</h2>
+					<aside>
+						<br>
+						&nbsp;&nbsp;
+						Try mozzarella sticks with your pizza. If you have a family to fee or just a big appetite, you can make your meal into a feast!
+						<br><br><br>
+					</aside>
+				</section>
+
+				<section data-role="contact_us_content">
+					<a name="contact_us">back to top</a>
+					<h2>contact us</h2>
+					<p>
+						3065 Centreville rd, Herndon, VA 20171<br>Tel: (703) 904-0223
+					</p>
+					<p>
+						Full Hours: 10:00 am - 10:00 pm<br>
+					</p>
+				</section>
+			</main>
+
+		</section>
+		<script src="config.js"></script>
+		<script src="scripts/jquery-3.6.0.min.js"></script>
+		<script src="scripts/main.js"></script>
+		<script src="scripts/navigation.js"></script>
+		<script src="scripts/pastries.js"></script>
+		<script src="scripts/coffee.js"></script>
+	</body>
+</html>
